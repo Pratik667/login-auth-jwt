@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JWT Auth</title>
+</head>
+<body>
+    <h1>JWT Auth with Vanilla JS</h1>
+    <div>
+        <h2>Register</h2>
+        <input type="text" id="register-username" placeholder="Username">
+        <input type="password" id="register-password" placeholder="Password">
+        <button onclick="register()">Register</button>
+    </div>
+    <div>
+        <h2>Login</h2>
+        <input type="text" id="login-username" placeholder="Username">
+        <input type="password" id="login-password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+    <div>
+        <h2>Protected Route</h2>
+        <button onclick="accessProtected()">Access Protected Route</button>
+        <p id="response"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
